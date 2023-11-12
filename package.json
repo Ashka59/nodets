@@ -1,0 +1,22 @@
+{
+  "name": "nodets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "cucumber": "cross-env NODE_OPTIONS=\"--loader ts-node/esm\" cucumber-js --require-module ts-node/register --import 'features/step_definitions/*.ts",
+    "test": "npm run cucumber"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@types/node": "^20.9.0",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
